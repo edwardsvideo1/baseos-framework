@@ -1,2 +1,2 @@
 # baseos
-Pre-Prod BaseOS for MaaS-like environments
+Pre-Prod BaseOS for MaaS-like initiatives
