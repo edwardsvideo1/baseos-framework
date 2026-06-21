@@ -56,18 +56,18 @@ The following hardware inventory components and firmware versions were used for 
 | AHCI.Embedded.2-1 | Embedded AHCI 2 | Sapphire Rapids SATA AHCI Controller | DELL (Intel) | N/A | Not Capable |
 | BOSS.SL.12-1 | BOSS in SL 12 | BOSS-N1 Monolithic | DELL (Marvell) | Gen 3 | Capable (Disabled) |
 
+### Virtual Disks
+
+| Drive | Name | RAID Type | Media | Capacity | Status | Read Cache | Write Cache | Stripe Size |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Disk.Virtual.0:BOSS.SL.12-1 | VD_R1_0 | RAID1 | Solid State Drive | 480.0 GB | Online | No Read Ahead | Write Through | 128KB |
+
 ### Physical Disks
 
 | Drive | Description | Manufacturer | Model | Media | Form Factor | Protocol | Max Speed | Capacity | RAID Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Disk.Direct.0-0:BOSS.SL.12-1 | Disk 0 on BOSS in SL 12 | SK hynix | Dell NVMe PE8010 RI M.2 480GB | Solid State Drive | M.2 | NVMe 1.3 | 8 GT/s | 480.1 GB | Online |
 | Disk.Direct.1-1:BOSS.SL.12-1 | Disk 1 on BOSS in SL 12 | SK hynix | Dell NVMe PE8010 RI M.2 480GB | Solid State Drive | M.2 | NVMe 1.3 | 8 GT/s | 480.1 GB | Online |
-
-### Virtual Disks
-
-| Drive | Name | RAID Type | Media | Capacity | Status | Read Cache | Write Cache | Stripe Size |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Disk.Virtual.0:BOSS.SL.12-1 | VD_R1_0 | RAID1 | Solid State Drive | 480.0 GB | Online | No Read Ahead | Write Through | 128KB |
 
 ### PCIe NVMe SSDs
 
