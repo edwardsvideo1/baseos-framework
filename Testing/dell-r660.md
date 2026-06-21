@@ -1,6 +1,6 @@
-- Dell R660 Hardware Platform
+* Dell R660 Hardware Platform
 The following components and firmware were used for this test effort:
--- Firmware
+** Firmware
 | Component | FW Version |
 |:-|:-|
 | Backplane 1 | 7.20 |
