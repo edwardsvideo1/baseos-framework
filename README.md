@@ -17,7 +17,6 @@ Pre-Prod BaseOS for MaaS-like initiatives.
 -  Create simple chainload-like bootstrap design flexible enough to handle an environment that is in infant stages of configuration or has been fully configured for production.
 -  Proof of Concept "patching" using kexec on Flatcar with Ignition.  Upgrade Kernels without Reboot to reduce downtime.
 
-## Process Flow
 ```mermaid
 sequenceDiagram
     participant BMC as BMC / iDRAC
@@ -30,10 +29,10 @@ sequenceDiagram
     BMC->>iPXE: Mount Virtual CD-ROM & boot iPXE custom image
     iPXE->>Net: SLAAC — request IPv6 address
     Net-->>iPXE: IPv6 address assigned
-    iPXE->>Cfg: Fetch baseipxe.cfg
-    Cfg-->>iPXE: baseipxe.cfg returned
-    iPXE->>Cfg: Fetch discovery_ipxe.cfg
-    Cfg-->>iPXE: discovery_ipxe.cfg returned
+    iPXE->>Cfg: Fetch Base iPXE config
+    Cfg-->>iPXE: Base iPXE config returned
+    iPXE->>Cfg: Fetch final OS config else Discovery config
+    Cfg-->>iPXE: final OS config or Discovery config returned
     iPXE->>Kernel: Boot Flatcar kernel
     Kernel->>Net: SLAAC — request IPv6 address
     Net-->>Kernel: IPv6 address assigned
