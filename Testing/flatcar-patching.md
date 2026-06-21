@@ -3,6 +3,6 @@ Normally on Container platforms with Flatcar, patching is done by updating confi
 1. Stage the updated kernel and initrd in `/tmp/` on the node.  This could be done via ansible, systemd unit, curl or other various methods.
 2. Run kexec commands to let systemd safely stop services and then load the new kernel.  Example:
 ```
-sudo kexec -l /tmp/vmlinuz --initrd=/tmp/cpio.gz --reuse-cmdline
+sudo kexec -l vmlinuz --initrd=cpio.gz --reuse-cmdline
 system systemctl kexec
 ```
