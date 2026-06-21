@@ -1,5 +1,8 @@
+- Dell R660 Hardware Platform
+The following components and firmware were used for this test effort:
+-- Firmware
 | Component | FW Version |
-|-----------|------------|
+|:-|:-|
 | Backplane 1 | 7.20 |
 | BIOS | 2.10.1 |
 | Bootstrap OS |	Not Installed |
