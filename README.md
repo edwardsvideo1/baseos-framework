@@ -11,6 +11,8 @@ Pre-Prod BaseOS for MaaS-like initiatives.
 -  No DHCP
 
 ## Goals
+-  Eliminate PXE and DHCP enabling a pathway to reduce server hardware and archaic troubleshooting between network teams, datacenter teams, deployment teams.
+-  Eliminate IPv4 but still support if necessary.
 -  Build a lightweight image that requires minimal environmental configuration to load quickly and do discovery and inventory tasks.
 -  Enable a framework for container workloads to be layered in over time, to possibly include cabling checks, hardware checks, health checks, firmware updates, etc.
 -  Enable base shell of an OS that can be accessible on the network with minimal configuration.
